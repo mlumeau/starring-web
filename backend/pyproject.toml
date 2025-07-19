@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+uvicorn = "^0.35.0"
+fastapi = "^0.116.1"
+sqlalchemy = "^2.0.41"
+httpx = {extras = ["http2"], version = "^0.28.1"}
+alembic = "^1.16.4"
+python-dotenv = "^1.1.1"
+pytest = "^8.4.1"
+pytest-asyncio = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
